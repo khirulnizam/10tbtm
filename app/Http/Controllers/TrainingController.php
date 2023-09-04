@@ -35,8 +35,9 @@ class TrainingController extends Controller
         Training::create($request->all());
         //dd($request);
 
-        //display another interface
-        return view('createtraining');
+        //display index with data
+        $trainings=Training::all();
+        return view ("training.index")->with(compact('trainings'));
 
 
     }
