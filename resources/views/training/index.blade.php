@@ -17,7 +17,9 @@
                             <th scope="col" class="px-6 py-4">#</th>
                             <th scope="col" class="px-6 py-4">Training</th>
                             <th scope="col" class="px-6 py-4">Description</th>
-                            <th scope="col" class="px-6 py-4">TRainer</th>
+                            <th scope="col" class="px-6 py-4">Trainer</th>
+                            <th scope="col" class="px-6 py-4">Show</th>
+                            <th scope="col" class="px-6 py-4">Edit</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -28,6 +30,16 @@
                             <td class="whitespace-nowrap px-6 py-4">{{ $row->title }}</td>
                             <td class="whitespace-nowrap px-6 py-4">{{ $row->description }}</td>
                             <td class="whitespace-nowrap px-6 py-4">{{ $row->trainer }}</td>
+                            <td class="whitespace-nowrap px-6 py-4">
+                            <x-primary-button class="ml-3">
+                                Show
+                            </x-primary-button>
+                            </td>
+                            <td class="whitespace-nowrap px-6 py-4">
+                            <x-primary-button class="ml-3">
+                                Edit
+                            </x-primary-button>
+                            </td>
                             </tr>
                         @endforeach
                             
