@@ -34,7 +34,7 @@
                     <!-- Button -->
                     <div class="flex items-center justify-end mt-4">
                         <x-primary-button class="ml-3">
-                            {{ __('Create Record') }}
+                            {{ __('Insert Training Record') }}
                         </x-primary-button>
                     </div>
                 </form>

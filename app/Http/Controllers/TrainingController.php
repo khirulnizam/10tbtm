@@ -10,7 +10,7 @@ class TrainingController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         //fetch records
         $trainings=Training::all();

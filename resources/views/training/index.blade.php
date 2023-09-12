@@ -1,8 +1,23 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Listing & Search') }}
-        </h2>
+    <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Listing & Search') }}</h2>
+            <form action="{{ route('training.index') }}" method="get">
+
+            <div class="flex">
+                <div class="h-screen">
+                <!-- Training Search -->
+                    <x-text-input id="title" type="text" name="title" class="ml-3 h-20px"/>
+                </div>
+                <div class="h-screen">
+                    <x-primary-button class="ml-3 h-20px">
+                        Search
+                    </x-primary-button>
+                </div>
+            </div>
+
+            </form>
+        
     </x-slot>
 
     <div class="py-12">
